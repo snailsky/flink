@@ -176,6 +176,7 @@ public class PackagedProgram {
 		URL jarFileUrl;
 		try {
 			jarFileUrl = jarFile.getAbsoluteFile().toURI().toURL();
+			System.out.printf("===jarFileUrl: %s%n", jarFileUrl);
 		} catch (MalformedURLException e1) {
 			throw new IllegalArgumentException("The jar file path is invalid.");
 		}
