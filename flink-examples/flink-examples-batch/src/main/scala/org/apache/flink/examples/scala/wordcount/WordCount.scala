@@ -46,7 +46,6 @@ import org.apache.flink.examples.java.wordcount.util.WordCountData
 object WordCount {
 
   def main(args: Array[String]) {
-
     val params: ParameterTool = ParameterTool.fromArgs(args)
 
     // set up execution environment

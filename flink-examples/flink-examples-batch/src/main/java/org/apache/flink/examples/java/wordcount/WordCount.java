@@ -50,6 +50,7 @@ public class WordCount {
 	// *************************************************************************
 
 	public static void main(String[] args) throws Exception {
+		System.out.println("===java word count");
 
 		final ParameterTool params = ParameterTool.fromArgs(args);
 
