@@ -194,10 +194,12 @@ public class PackagedProgram {
 		// now that we have an entry point, we can extract the nested jar files (if any)
 		this.extractedTempLibraries = extractContainedLibraries(jarFileUrl);
 		this.classpaths = classpaths;
+		System.out.printf("===classpaths:%s", classpaths.toString());
 		this.userCodeClassLoader = JobWithJars.buildUserCodeClassLoader(getAllLibraries(), classpaths, getClass().getClassLoader());
 
 		// load the entry point class
 		this.mainClass = loadMainClass(entryPointClassName, userCodeClassLoader);
+		System.out.printf("===entryPointClassName:%s", entryPointClassName);
 
 		// if the entry point is a program, instantiate the class and get the plan
 		if (Program.class.isAssignableFrom(this.mainClass)) {
@@ -461,6 +463,10 @@ public class PackagedProgram {
 			}
 		}
 
+		for(URL lib: libs) {
+			System.out.printf("===lib:s", lib.toString());
+		}
+
 		return libs;
 	}
 
@@ -677,8 +683,10 @@ public class PackagedProgram {
 			while (entries.hasMoreElements()) {
 				JarEntry entry = entries.nextElement();
 				String name = entry.getName();
+				System.out.printf("===jar entry name:%s%n", name);
 
 				if (name.length() > 8 && name.startsWith("lib/") && name.endsWith(".jar")) {
+					System.out.printf("===add jar entry name:%s%n", name);
 					containedJarFileEntries.add(entry);
 				}
 			}
@@ -712,6 +720,7 @@ public class PackagedProgram {
 										entry.getName() + "'.", e);
 						}
 
+						System.out.printf("===add tempFile:%s%n", tempFile.getName());
 						extractedTempLibraries.add(tempFile);
 
 						// copy the temp file contents to a temporary File

@@ -133,6 +133,7 @@ public class JobWithJars {
 		for (int i = 0; i < classpaths.size(); i++) {
 			urls[i + jars.size()] = classpaths.get(i);
 		}
+		System.out.printf("===loader urls:%s%n", urls);
 		return FlinkUserCodeClassLoaders.parentFirst(urls, parent);
 	}
 }
