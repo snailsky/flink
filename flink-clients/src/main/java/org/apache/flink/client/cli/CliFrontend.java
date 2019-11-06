@@ -847,6 +847,7 @@ public class CliFrontend {
 		}
 
 		File jarFile = new File(jarFilePath);
+		System.out.printf("===jarFilePath: %s%n", jarFilePath);
 
 		// Check if JAR file exists
 		if (!jarFile.exists()) {
