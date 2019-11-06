@@ -83,9 +83,11 @@ public abstract class ProgramOptions extends CommandLineOptions {
 		this.programArgs = args;
 
 		List<URL> classpaths = new ArrayList<URL>();
+		System.out.printf("===command line:%s%n", line);
 		if (line.hasOption(CLASSPATH_OPTION.getOpt())) {
 			for (String path : line.getOptionValues(CLASSPATH_OPTION.getOpt())) {
 				try {
+					System.out.printf("===command line add path:%s%n", path);
 					classpaths.add(new URL(path));
 				} catch (MalformedURLException e) {
 					throw new CliArgsException("Bad syntax for classpath: " + path);
@@ -93,6 +95,7 @@ public abstract class ProgramOptions extends CommandLineOptions {
 			}
 		}
 		this.classpaths = classpaths;
+		System.out.printf("===classpaths:%s%n", classpaths);
 
 		this.entryPointClass = line.hasOption(CLASS_OPTION.getOpt()) ?
 				line.getOptionValue(CLASS_OPTION.getOpt()) : null;
