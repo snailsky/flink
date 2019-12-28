@@ -39,8 +39,8 @@ under the License.
 		<module>flink-orc</module>
 		<module>flink-jdbc</module>
 		<module>flink-hadoop-compatibility</module>
-<!--		<module>flink-hbase</module>-->
-<!--		<module>flink-hcatalog</module>-->
+		<module>flink-hbase</module>
+		<module>flink-hcatalog</module>
 		<module>flink-connector-kafka-base</module>
 		<module>flink-connector-kafka-0.9</module>
 		<module>flink-connector-kafka-0.10</module>
@@ -49,14 +49,14 @@ under the License.
 		<module>flink-connector-elasticsearch2</module>
 		<module>flink-connector-elasticsearch5</module>
 		<module>flink-connector-elasticsearch6</module>
-<!--		<module>flink-connector-hive</module>-->
-<!--		<module>flink-connector-rabbitmq</module>-->
-<!--		<module>flink-connector-twitter</module>-->
-<!--		<module>flink-connector-nifi</module>-->
-<!--		<module>flink-connector-cassandra</module>-->
+		<module>flink-connector-hive</module>
+		<module>flink-connector-rabbitmq</module>
+		<module>flink-connector-twitter</module>
+		<module>flink-connector-nifi</module>
+		<module>flink-connector-cassandra</module>
 		<module>flink-connector-filesystem</module>
 		<module>flink-connector-kafka</module>
-<!--		<module>flink-connector-gcp-pubsub</module>-->
+		<module>flink-connector-gcp-pubsub</module>
 	</modules>
 
 	<!-- override these root dependencies as 'provided', so they don't end up
@@ -94,7 +94,7 @@ under the License.
 			</activation>
 			<modules>
 				<module>flink-sql-connector-elasticsearch6</module>
-<!--				<module>flink-sql-connector-kafka-0.9</module>-->
+				<module>flink-sql-connector-kafka-0.9</module>
 				<module>flink-sql-connector-kafka-0.10</module>
 				<module>flink-sql-connector-kafka-0.11</module>
 				<module>flink-sql-connector-kafka</module>

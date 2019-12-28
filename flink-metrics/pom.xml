@@ -35,13 +35,13 @@ under the License.
 
 	<modules>
 		<module>flink-metrics-core</module>
-<!--		<module>flink-metrics-dropwizard</module>-->
+		<module>flink-metrics-dropwizard</module>
 		<module>flink-metrics-graphite</module>
-<!--		<module>flink-metrics-influxdb</module>-->
+		<module>flink-metrics-influxdb</module>
 		<module>flink-metrics-jmx</module>
 		<module>flink-metrics-prometheus</module>
-<!--		<module>flink-metrics-statsd</module>-->
-<!--		<module>flink-metrics-datadog</module>-->
+		<module>flink-metrics-statsd</module>
+		<module>flink-metrics-datadog</module>
 		<module>flink-metrics-slf4j</module>
 	</modules>
 

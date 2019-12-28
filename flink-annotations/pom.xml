@@ -31,6 +31,7 @@ under the License.
 
 	<artifactId>flink-annotations</artifactId>
 	<name>flink-annotations</name>
+
 	<packaging>jar</packaging>
 
 </project>
