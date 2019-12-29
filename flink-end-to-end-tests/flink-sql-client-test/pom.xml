@@ -57,7 +57,7 @@ under the License.
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-json</artifactId>
 			<version>${project.version}</version>
-			<classifier>sql-jar</classifier>
+<!--			<classifier>sql-jar</classifier>-->
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -65,7 +65,7 @@ under the License.
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-csv</artifactId>
 			<version>${project.version}</version>
-			<classifier>sql-jar</classifier>
+<!--			<classifier>sql-jar</classifier>-->
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -157,21 +157,21 @@ under the License.
 									<groupId>org.apache.flink</groupId>
 									<artifactId>flink-avro</artifactId>
 									<version>${project.version}</version>
-									<classifier>sql-jar</classifier>
+<!--									<classifier>sql-jar</classifier>-->
 									<type>jar</type>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.apache.flink</groupId>
 									<artifactId>flink-json</artifactId>
 									<version>${project.version}</version>
-									<classifier>sql-jar</classifier>
+<!--									<classifier>sql-jar</classifier>-->
 									<type>jar</type>
 								</artifactItem>
 								<artifactItem>
 									<groupId>org.apache.flink</groupId>
 									<artifactId>flink-csv</artifactId>
 									<version>${project.version}</version>
-									<classifier>sql-jar</classifier>
+<!--									<classifier>sql-jar</classifier>-->
 									<type>jar</type>
 								</artifactItem>
 								<!-- This SQL JAR is not used for now to avoid dependency conflicts; see FLINK-10107.
